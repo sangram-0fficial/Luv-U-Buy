@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Love U Buy</title>
+<link href="regat1.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div class="main_div">
+
+	  	<h4><font size="15" color="#804000">Luv U Buy</font></h4>	
+	  	
+	  	</div>
+	  	
+<div class="contenido">		
+
+<div class="login">
+<ul class="backgroundslider">
+	<li></li>
+	<li></li>
+	<li></li>
+	</ul>
+	
+	
+<a href="Finalogin.html"><font size="4" color="#00FF00">Back to login page!</font></a>
+
+<h1>Hey User</h1><br><br>
+
+<script type="text/javascript">  
+function matchpassword(){   
+	var firstpassword=document.f1.Password.value;  
+	var secondpassword=document.f1.Password2.value;  
+	var phonecheck=document.f1.Phone.value;
+	
+	if(phonecheck.length<10 || phonecheck.length>10){
+		alert("Give a valid phone number!");
+		return false;
+	}
+	
+	else if(firstpassword==secondpassword){  
+		return true;  
+	}  
+	else{  
+		alert("password must be same!");  
+		return false;  
+	}  
+}  
+</script>  
+	
+<form action="Register" method="post" onclick="return matchpassword()">
+
+<input type="text" name="username" id="Username" placeholder="Username" required>
+    <input type="text" name="Name" id="name" placeholder="Name" required><br><br>    
+
+<input type="password" name="Password" id="password" placeholder="Password" required>
+	 <select class="form-control text" name="City" required>
+    <option selected value="Select City">Select City</option>
+            <option>Bhubaneswar</option>
+            <option>Paralakhemundi</option>
+    
+    
+    </select>
+    <br><br>
+    
+<input type="password" name="Password2" id="cofirm password" placeholder="Confirm Password" required>
+    <select class="form-control" name="State">
+    <option selected value="Select City">Select State</option>
+            <option>Odisha</option>
+    
+    
+    </select>
+	<br><br>   
+    
+<input type="text" name="CAddress1" id="caddress1" placeholder="CAddress1" required>
+    <input type="number" name="PinCode" id="pincode" placeholder="Pin Code" required><br><br>
+	    
+	
+	
+<input type="text" name="Address2" id="caddress2" placeholder="Address2" required>
+   <input type="email" name="Email" id="email" placeholder="Email Id" required><br><br>
+   
+<select id="ph"><option>+91</option><option>+92</option><option>+93</option><option>+94</option><option>+95</option></select>
+  <input type="number" name="Phone" id="number" placeholder="Phone Number" required><br><br>
+
+      
+      <b><input type="submit" name="submit" value="Register"></b>
+      
+ 
+<div class="container" style="margin-top:-90px;text-align:center;font-style:italic;	font-size:135px;"color="#F8F8FF">
+<p><font size="3">&copy;Design by KAMRAN ALAM</font></p>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+  
